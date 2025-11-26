@@ -10,11 +10,5 @@
   <circle cx="48" cy="48" r="32" fill="none" stroke="url(#pinkGrad)" stroke-width="6"/>
   <!-- Centered M: use a text element positioned at 50%/50% so it's centered in the circle -->
   <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" fill="#00C7E6" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="36">M</text>
-  <!-- White cut overlay clipped to the circle so the M shows a white slice -->
-  <clipPath id="clipCircle">
-    <!-- reduce clip radius slightly so the white cut doesn't overlap the circle stroke -->
-    <circle cx="48" cy="48" r="28.5" />
-  </clipPath>
-  <!-- thinner, slightly inset cut: x,y adjusted and width reduced to avoid overlapping stroke -->
-  <rect x="20" y="46" width="56" height="8" fill="#ffffff" transform="rotate(-18 48 48)" rx="3" clip-path="url(#clipCircle)" />
+  <!-- No overlay cut; showing the plain centered 'M' without any additional overlay -->
 </svg>
